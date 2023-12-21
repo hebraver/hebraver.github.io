@@ -1,0 +1,32 @@
+img {
+    width: 150px;
+    position:relative;
+    left: 70px;
+}
+#name {
+    position: relative;
+    left: 70px;
+}
+#career_sum {
+    width: 250px;
+    position: relative;
+    bottom: 370px;
+    left: 380px;
+}
+#hobbies_sum {
+    width: 250px;
+    position: relative;
+    bottom: 573px;
+    left: 640px;
+}
+#recipe_sum {
+    width: 250px;
+    position: relative;
+    bottom: 810px;
+    left: 900px;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 1270px;
+}
