@@ -1,0 +1,90 @@
+.nvbar {
+    background-color: rgb(182, 111, 227);
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+  }
+.main-div {
+    background: rgb(201,247,242);
+    background: radial-gradient(circle, rgba(201,247,242,1) 0%, rgba(117,177,247,1) 100%);
+}
+.book-des {
+    background-color: rgb(198, 240, 234);
+    border: black solid;
+    margin-left: 60px;
+}
+.detail-des {
+    background-color: rgb(198, 240, 234);
+    border: black solid;
+}
+.bruno-ace-regular {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.detailDiv {
+    background: rgb(201,247,242);
+    background: radial-gradient(circle, rgba(201,247,242,1) 0%, rgba(117,177,247,1) 100%);
+}
+.welcomer {
+    position: absolute;
+    left: 240px;
+    bottom: 400px;
+    font-size: 50px;
+    color: white;
+}
+.mainImg {
+    max-width: 100%;
+    width: 2000px;
+}
+footer {
+    border: solid black;
+    background: rgb(145, 231, 231);
+}
+.foot-text{
+    margin-left: 60px;
+}
+.foot-book-button {
+    position: absolute;
+    left: 350px;
+    top: 20px;
+}
+
+.mainDiv-bo {
+    background: rgb(201,247,242);
+    background: radial-gradient(circle, rgba(201,247,242,1) 0%, rgba(117,177,247,1) 100%);
+}
+.book-heading {
+    color: black;
+    position: relative;
+    left: 500px;
+}
+.info {
+    background-color: rgb(198, 240, 234);
+    border: black solid;
+    margin-left: 70px;
+}
+.receipt {
+    background-color: rgb(198, 240, 234);
+    border: black solid;
+    margin-left: 50px;
+}
+.the-button {
+    background-color: rgb(227, 255, 251);
+}
+.desc-caption {
+    border: solid black;
+    margin-left: 50px;
+    background-color: rgb(198, 240, 234);
+}
+.chris-review {
+    width: 600px;
+    position: relative;
+    top: 30px;
+}
+.review2 {
+    width: 600px;
+    position: relative;
+    top: 20px;
+}
