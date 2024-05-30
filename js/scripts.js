@@ -26,7 +26,23 @@ function date() {
 tiempo()
 function cost(hours){
   alert("We have a $300 base charge plus 75 dollars for every hour we DJ");
-  var cost=300+(75*hours);
-  alert("Your total is "+cost);
+  var price=300+(75*hours);
+  alert("Your total is "+price);
 }
 cost(hours)
+var SENTINEL = "quit";
+function start(hours, SENTINEL){
+  var count = hours*75;
+  alert("Your max amount of songs is "+count);
+    while(true){
+        for(var i = 0; i < count; i++){
+            var song=prompt("What song");
+            console.log(song);
+            if (song==SENTINEL) {
+               break;
+            }
+        }
+
+    }
+}
+start(hours, SENTINEL)
