@@ -101,7 +101,7 @@
           function date() {
               alert("Please make sure to put in a valid date that is not in the past")
               var bookDate=prompt("What day would you like to book us? Ex: 5/17/24")
-              if (bookDate=="5/17/24" || bookDate==6/12/24 || bookDate==6/13/24) {
+              if (bookDate=="5/17/24" || bookDate=="6/12/24" || bookDate=="6/13/24") {
                 alert("We are booked this day, try another")
               }
               else {
@@ -125,7 +125,7 @@
           }
           tiempo()
           function cost(hours){
-            var SENTINEL = "quit";
+            let SENTINEL = "quit";
             alert("We have a $300 base charge plus 75 dollars for every hour we DJ");
             var price=300+(75*hours);
             alert("Your total is "+price);
@@ -135,10 +135,9 @@
             var count = hours*75;
             alert("Your max amount of songs is "+count);
               while(true){
-                  for(var i = 0; i < count; i++){
+                  for(var numDe = 0; numDe < count; numDe++){
                       var song=prompt("What song");
-                      console.log(song);
-                      if (song==SENTINEL) {
+                      if (song=="quit") {
                         break;
                       }
                   }
