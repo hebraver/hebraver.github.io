@@ -122,53 +122,55 @@
       <script>
         function doEverything(){
           function date() {
-              alert("Please make sure to put in a valid date that is not in the past")
-              var bookDate=prompt("What day would you like to book us? Ex: 5/17/24")
+              alert("Please make sure to put in a valid date that is not in the past");
+              var bookDate=prompt("What day would you like to book us? Ex: 5/17/24");
               if (bookDate=="5/17/24" || bookDate=="6/12/24" || bookDate=="6/13/24") {
-                alert("We are booked this day, try another")
+                alert("We are booked this day, try another");
               }
               else {
-                alert("We will see you on "+bookDate)
+                alert("We will see you on "+bookDate);
               }
             }
             date()
             function address() {
-              alert("We are only available within the state of Illinois, please look for other services if you are outside Illinois")
-              var bookAddress=prompt("Where will we be DJing? Ex. 1989 North Example Street")
-              alert("We will show up to "+bookAddress)
+              alert("We are only available within the state of Illinois, please look for other services if you are outside Illinois");
+              var bookAddress=prompt("Where will we be DJing? Ex. 1989 North Example Street");
+              alert("We will show up to "+bookAddress);
             }
             address()
           function tiempo(){
               alert("We will show up one hour in advance to set up");
-              var time=prompt("What time does the party start? Ex: 8:00 pm");
+              var times=prompt("What time does the party start? Ex: 8:00 pm");
               alert("The minimum hours we DJ for is 3 and our maximum amount of hours is 8");
               var hours=parseInt(prompt("How many hours will we DJ for? Ex: 4"));
-              alert("We will show up an hour before "+time+" and DJ for "+hours+" hours");
-              cost(hours)
+              alert("We will show up an hour before "+times+" and DJ for "+hours+" hours");
+              cost(hours);
           }
           tiempo()
           function cost(hours){
-            let SENTINEL = "quit";
             alert("We have a $300 base charge plus 75 dollars for every hour we DJ");
             var price=300+(75*hours);
             alert("Your total is "+price);
-            start(hours, SENTINEL)
+            start(hours);
           }
-          function start(hours, SENTINEL){
-            var count = hours*75;
-            alert("Your max amount of songs is "+count);
-              while(true){
-                  for(var numDe = 0; numDe < count; numDe++){
-                      var song=prompt("What song");
-                      if (song==SENTINEL) {
-                        break;
-                      }
-                  }
-          
+          function start(bookDate, bookAddress, times, hours, price){
+            var genre=prompt("What genre of music would you like us to play?");
+            alert("You will be asked to enter 5 songs of your choice, please enter one then hit 'Ok' then repeat that process.");
+            while(true){
+              for (var i=0; i<=4; i++){
+                var yourSongs=prompt("Please enter a song");
               }
             }
+            var theDate=bookDate;
+            var theAddress=bookAddress;
+            var theTime=times;
+            var theHour=hours;
+            var thePrice=price;
+            alert("To recap: On "+theDate+" we will show up to "+theAddress+" one hour before "+theTime+" and DJ for "+theHour+" hours. We will play "+genre+" music along with your 5 requested songs. Your total is $"+thePrice);
+            alert("We will get back to you soon!");          
+          }
         }
-        
+doEverything();
       </script>
     </body>
 </html>
